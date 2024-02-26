@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: wrap;
+}
+
+.nav {
+}
+
+.link {
+  padding: 0px 10px;
+  text-decoration: none;
+}

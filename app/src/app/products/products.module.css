@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 40px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
