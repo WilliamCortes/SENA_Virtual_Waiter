@@ -345,7 +345,13 @@ footer {
   > thead > tr > th:first-child,
   > tbody > tr > td:first-child,
   > tfoot > tr > td:first-child {
-    width: 70%;
+    width: 20%;
+  }
+
+  > thead > tr > th:nth-child(2),
+  > tbody > tr > td:nth-child(2),
+  > tfoot > tr > td:nth-child(2) {
+    width: 50%;
   }
 
   > thead > tr > th:last-child,
@@ -358,6 +364,7 @@ footer {
   }
 
   > tfoot > tr > td:last-child {
+    width: 70%;
     border: solid 1px var(--green);
   }
 }

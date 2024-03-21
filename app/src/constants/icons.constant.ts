@@ -1,4 +1,33 @@
+//icons
 export { default as Success } from "../../public/assets/icons/success.svg";
-export { default as Info } from "../../public/assets/icons//info.svg";
-export { default as Warning } from "../../public/assets/icons//warning.svg";
-export { default as Error } from "../../public/assets/icons//error.svg";
+export { default as Info } from "../../public/assets/icons/info.svg";
+export { default as Warning } from "../../public/assets/icons/warning.svg";
+export { default as Error } from "../../public/assets/icons/error.svg";
+export { default as close } from "../../public/assets/icons/Close.png";
+export { default as beefBurger } from "../../public/assets/icons/BeefBurger.png";
+export { default as steak } from "../../public/assets/icons/Steak.png";
+export { default as fish } from "../../public/assets/icons/Fish.png";
+export { default as pizza } from "../../public/assets/icons/Pizza.png";
+export { default as soup } from "../../public/assets/icons/Soup.png";
+export { default as chicken } from "../../public/assets/icons/Chicken.png";
+export { default as especialFood } from "../../public/assets/icons/EspecialFood.png";
+export { default as fries } from "../../public/assets/icons/Fries.png";
+export { default as juiceIcon } from "../../public/assets/icons/Juice.png";
+export { default as cafe } from "../../public/assets/icons/Cafe.png";
+export { default as iceCream } from "../../public/assets/icons/IceCream.png";
+export { default as cupcake } from "../../public/assets/icons/Cupcake.png";
+export { default as homePage } from "../../public/assets/icons/HomePage.png";
+export { default as restaurant } from "../../public/assets/icons/Restaurant.png";
+export { default as user } from "../../public/assets/icons/User.png";
+export { default as plus } from "../../public/assets/icons/Plus.png";
+//images
+export { default as BeefBurger } from "../../public/assets/images/BeefBurger.png";
+export { default as salmon } from "../../public/assets/images/salmon.svg";
+export { default as bistec } from "../../public/assets/images/bistec.svg";
+export { default as juice } from "../../public/assets/images/juice.svg";
+export { default as burger } from "../../public/assets/images/burger.svg";
+export { default as Table } from "../../public/assets/images/Table.png";
+export { default as Restaurant } from "../../public/assets/images/Restaurant.png";
+export { default as Invoice } from "../../public/assets/images/Invoice.png";
+export { default as User } from "../../public/assets/images/User.png";
+export { default as AddUser } from "../../public/assets/images/AddUser.png";

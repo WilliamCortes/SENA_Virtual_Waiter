@@ -1,5 +1,9 @@
 "use client";
 import { useState } from "react";
+import {
+  CldUploadButton,
+  CloudinaryUploadWidgetResults,
+} from "next-cloudinary";
 import { ProductsRepository } from "@/repositories";
 import { TProduct } from "@/types/product.type";
 import { message } from "@/components/common/Message";
@@ -12,6 +16,7 @@ const initState = {
   price: 0,
   amount: 0,
   description: "",
+  image: "",
   expirationDate: new Date(),
 };
 
@@ -23,6 +28,17 @@ const AddProductPage = () => {
   ) => {
     const { name, value } = e.target;
     setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+  };
+
+  const handleUploadImage = (result: CloudinaryUploadWidgetResults) => {
+    if (
+      result.event !== "success" ||
+      !result.info ||
+      typeof result.info === "string"
+    )
+      return message({ text: "Error al subir la imagen", type: "error" });
+    const { secure_url: image } = result.info;
+    setProduct((prevProduct) => ({ ...prevProduct, image }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -95,6 +111,11 @@ const AddProductPage = () => {
             required
           />
         </label>
+        <CldUploadButton
+          uploadPreset="beti-work"
+          onSuccess={handleUploadImage}
+        />
+
         <button className={styles.btn} type="submit">
           Agregar producto
         </button>

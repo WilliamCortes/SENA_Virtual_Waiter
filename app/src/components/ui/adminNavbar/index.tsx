@@ -1,10 +1,10 @@
 import { FC } from "react";
 import Link from "next/link";
-import styles from "./navbar.module.css";
+import styles from "./adminNavbar.module.css";
 
 type Props = {};
 
-export const Navbar: FC<Props> = () => {
+export const AdminNavbar: FC<Props> = () => {
   return (
     <header>
       <div className={styles.container}>
@@ -13,13 +13,16 @@ export const Navbar: FC<Props> = () => {
             <Link href="/">
               <button className={styles.link}>Home</button>
             </Link>
-            <Link href="/products">
+            <Link href="/admin">
+              <button className={styles.link}>Admin</button>
+            </Link>
+            <Link href="/admin/products">
               <button className={styles.link}>Productos</button>
             </Link>
-            <Link href="/products/create">
+            <Link href="/admin/products/create">
               <button className={styles.link}>Agregar producto</button>
             </Link>
-            <Link href="/products/delete">
+            <Link href="/admin/products/delete">
               <button className={styles.link}>Eliminar producto</button>
             </Link>
           </ol>

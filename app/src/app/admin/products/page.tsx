@@ -1,6 +1,7 @@
 import { ProductsRepository } from "@/repositories";
 import { TProduct } from "@/types/product.type";
 import styles from "./products.module.css";
+import Image from "next/image";
 
 const getProducts = async (): Promise<TProduct[]> => {
   try {
@@ -23,9 +24,10 @@ const ProductsPage = async () => {
             <h2>{product.name}</h2>
             <p>Id: {product.idProduct}</p>
             <p>Costo: ${product.cost}</p>
-            <p>Pricio: ${product.price}</p>
+            <p>Precio: ${product.price}</p>
             <p>Cantidad en inventario: {product.amount}</p>
             <p>Description: {product.description}</p>
+            <Image width={200} height={200} src={product.image} alt="image" />
           </li>
         ))}
       </ul>
