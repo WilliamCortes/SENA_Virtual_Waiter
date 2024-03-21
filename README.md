@@ -4,13 +4,9 @@
 
 ## EVIDENCIAS:
 
-- [x] GA7-220501096-AA2-EV02 - Módulos de software codificados y probados - CAFT
+- [x] GA7-220501096-AA4-EV03 Componente frontend del proyecto formativo y proyectos de clase (listas de chequeo)
 
 ---
-
-## INSTRUCTOR
-
-Carlos Alberto Fuel Tulcan
 
 ## APRENDIZ
 
