@@ -22,6 +22,9 @@ export const AdminNavbar: FC<Props> = () => {
             <Link href="/admin/products/create">
               <button className={styles.link}>Agregar producto</button>
             </Link>
+            <Link href="/admin/products/update">
+              <button className={styles.link}>Editar producto</button>
+            </Link>
             <Link href="/admin/products/delete">
               <button className={styles.link}>Eliminar producto</button>
             </Link>

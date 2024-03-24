@@ -20,6 +20,13 @@ class Products extends Api {
     return await this.post<TProduct>(this.endpoints.products.all, newProduct);
   }
 
+  async updateProduct(newProduct: Partial<TProduct>) {
+    return await this.put<TProduct>(
+      `${this.endpoints.products.all}/${newProduct.idProduct}`,
+      newProduct
+    );
+  }
+
   async deleteProduct(id: string) {
     return await this.delete(`${this.endpoints.products.all}/${id}`);
   }
